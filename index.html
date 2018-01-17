@@ -1,0 +1,21 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Vue2.0 spa</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no, email=no, address=none">
+    <meta name="viewport" content="initial-scale=0.5, maximum-scale=0.5, minimum-scale=0.5, user-scalable=no">
+</head>
+<body>
+<div id="app">
+    <App></App>
+</div>
+<script src="/static/js/mod.js"></script>
+<script>
+require.resourceMap(__RESOURCE_MAP__);
+import startup from 'app/startup';
+</script>
+</body>
+</html>
