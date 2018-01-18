@@ -34,16 +34,9 @@
     import { Toast } from 'mint-ui';
 
     import store from './store';
-    import MtCell from "mint-ui/packages/cell/src/cell";
 
     export default {
-        components: {MtCell},
         store,
-        data() {
-            return {
-                is: 'HelloWorld'
-            };
-        },
         computed: {
             ...mapState([
                 'list'
