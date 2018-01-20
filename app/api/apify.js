@@ -10,6 +10,5 @@ import {apify, request} from 'i-apify';
 import list from './list';
 import option from './option';
 
+// @lick https://www.npmjs.com/package/i-apify
 export default apify(request.post, list, option);
-
-

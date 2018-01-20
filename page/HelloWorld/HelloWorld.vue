@@ -18,13 +18,8 @@
      */
 
     /**
-     * HelloWorld xxxxxxx
+     * HelloWorld
      * @module Index
-     *
-     * @property {string} title - 标题
-     *
-     * @example
-     *
      */
 
     'use strict';
@@ -33,14 +28,16 @@
 
     import { Toast } from 'mint-ui';
 
-    import store from './store';
+    import {title} from 'mixin';
+    import store from 'store';
 
     export default {
+        mixins: [title],
         store,
         computed: {
-            ...mapState([
-                'list'
-            ])
+            ...mapState({
+                list: state => state.helloWorld.list
+            })
         },
         methods: {
             listItem(index) {

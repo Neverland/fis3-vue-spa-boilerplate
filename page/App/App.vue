@@ -1,43 +1,36 @@
 <template>
     <div>
-        This is Vue SPA;
         <router-view></router-view>
     </div>
 </template>
 
 <script type="text/ecmascript-6">
     /**
-     * @file HelloWorld
+     * @file App
      * @author ienix(enix@foxmail.com)
      *
      * @since 6/1/2017, 12:07:54 PM
      */
 
     /**
-     * HelloWorld xxxxxxx
-     * @module Index
-     *
-     * @property {string} title - 标题
-     *
-     * @example
+     * 通用性逻辑可以在这个entry组件内处理
      *
      */
 
     'use strict';
 
     export default {
-        props: {},
         data() {
             return {
-                is: 'Entry'
+                is: 'app'
             };
-        },
-        methods: {},
-        components: {}
+        }
     };
 </script>
 
 <style lang="less" scoped rel="stylesheet/less">
-
+    /**
+     * @require /static/font/iconfont.css
+     */
 
 </style>

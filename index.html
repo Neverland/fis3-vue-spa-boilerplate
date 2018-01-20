@@ -2,19 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Vue2.0 spa</title>
+    <title>数字狗</title>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="format-detection" content="telephone=no, email=no, address=none">
     <meta name="viewport" content="initial-scale=0.5, maximum-scale=0.5, minimum-scale=0.5, user-scalable=no">
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-weight: 300;
+        font-family: -apple-system,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB",STHeiti,"Microsoft YaHei",
+            "Microsoft JhengHei","Source Han Sans SC","Noto Sans CJK SC","Source Han Sans CN","Noto Sans SC",
+            "Source Han Sans TC","Noto Sans CJK TC","WenQuanYi Micro Hei",SimSun,sans-serif;
+    }
+    </style>
 </head>
 <body>
 <div id="app">
     <App></App>
 </div>
+
+
 <script src="/static/js/mod.js"></script>
+<!-- // h5可以打开此项 -->
+<!--<script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>-->
 <script>
 require.resourceMap(__RESOURCE_MAP__);
+</script>
+<script>
 import startup from 'app/startup';
 </script>
 </body>

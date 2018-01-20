@@ -3,6 +3,6 @@
   "message": "ok",
   "data": {
     "uname": "foo",
-    "uid": 1
+    "price": 1
   }
 }

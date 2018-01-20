@@ -5,29 +5,23 @@
  * @since 2018/1/17
  */
 
-import Vue from 'vue';
-import Vuex from 'vuex';
-
 import {api} from 'api';
 
-Vue.use(Vuex);
-
-export default
-new Vuex.Store({
+export default {
     state: {
+        pageTitle: 'Hello world!',
         list: []
     },
     mutations: {
-        ['LIST'](state, {data}) {
+        ['LIST'](state, data) {
             state.list = data;
         }
     },
     actions: {
-        list({commit}) {
-            api.getList()
-                .then(response => {
-                    commit('LIST', response.data);
-                });
+        async list({commit}) {
+            let {data = {}} = await api.getList();
+
+            commit('LIST', data);
         }
     }
-});
+};

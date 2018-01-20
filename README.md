@@ -9,5 +9,5 @@ fis3 release -wc
 fis3 sever start --type=node
 
 http://localhost:8080/index
-http://localhost:8080#/helloWorld
+http://localhost:8080/#/helloWorld
 ```

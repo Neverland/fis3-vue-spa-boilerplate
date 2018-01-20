@@ -12,8 +12,10 @@ export default {
         }
     },
     handler: {
-        error(data, option) {
-
+        success({data}) {
+            return data;
+        },
+        error({data}) {
             return data;
         }
     }

@@ -6,10 +6,10 @@
  */
 
 import './ui';
+import './filter';
 
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import Vuex from 'vuex';
 
 import routerMap from './router';
 import {http} from './api';
@@ -17,7 +17,6 @@ import {http} from './api';
 import App from 'page/App';
 
 Vue.use(VueRouter);
-Vue.use(Vuex);
 Vue.use(http);
 
 let router = new VueRouter({
