@@ -10,8 +10,4 @@ export default {
     getUser: '/api/getUser',
     getList: '/api/getList',
     /*</dev>*/
-
-    getOrderList: '/api/getOrderList',
-    getUserInfo: '/api/getUserInfo',
-    getMyDogList: '/api/getMyDogList'
 };

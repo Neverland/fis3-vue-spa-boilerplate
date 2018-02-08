@@ -14,7 +14,7 @@ import VueRouter from 'vue-router';
 import routerMap from './router';
 import {http} from './api';
 
-import App from 'page/App';
+import App from '/view/App';
 
 Vue.use(VueRouter);
 Vue.use(http);

@@ -12,8 +12,13 @@ export default {
         }
     },
     handler: {
-        success({data}) {
-            return data;
+        success(response, option) {
+
+            if (response.success) {
+                return data;
+            }
+
+            return Promise.reject(response);
         },
         error({data}) {
             return data;

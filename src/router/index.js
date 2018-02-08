@@ -6,10 +6,10 @@
  */
 
 /*<dev>*/
-import HelloWorld from 'page/HelloWorld';
+import HelloWorld from '/view/HelloWorld';
 /*</dev>*/
 
-import NotFoundComponent from 'page/NotFoundComponent';
+import NotFoundComponent from '/view/NotFoundComponent';
 
 export default [
     /*<dev>*/

@@ -29,7 +29,7 @@
     import { Toast } from 'mint-ui';
 
     import {title} from 'mixin';
-    import store from 'store';
+    import store from 'src/page/HelloWorld/store';
 
     export default {
         mixins: [title],
