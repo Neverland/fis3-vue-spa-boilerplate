@@ -22,7 +22,8 @@ fis
             api: 'src/api',
             mixin: 'src/mixin',
             component: 'src/component',
-            store: 'src/store'
+            store: 'src/store',
+            mutationType: 'src/store/mutationType'
         }
     })
     .hook('node_modules');
@@ -71,7 +72,7 @@ fis
         ]
     });
 fis
-    .match('{*.less, *.vue:less, node_modules/mint-ui/lib/**.css}', {
+    .match('{*.less, *.vue:less, node_modules/element-ui/lib/**.css}', {
         parser: [
             fis.plugin('less-2.x'),
             fis.plugin('rem', {

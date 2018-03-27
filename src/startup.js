@@ -13,13 +13,16 @@ import VueRouter from 'vue-router';
 
 import routerMap from './router';
 import {http} from './api';
-
 import App from '/view/App';
 
 Vue.use(VueRouter);
 Vue.use(http);
 
 let router = new VueRouter({
+    mode: 'history',
+    /*<dev>*/
+    mode: 'hash',
+    /*</dev>*/
     routes: routerMap
 });
 

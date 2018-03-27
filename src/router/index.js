@@ -9,7 +9,7 @@
 import HelloWorld from '/view/HelloWorld';
 /*</dev>*/
 
-import NotFoundComponent from '/view/NotFoundComponent';
+import NotFound from '/view/NotFound';
 
 export default [
     /*<dev>*/
@@ -20,7 +20,7 @@ export default [
     /*</dev>*/
     {
         path: '*',
-        component: NotFoundComponent
+        component: NotFound
 
     }
 ];

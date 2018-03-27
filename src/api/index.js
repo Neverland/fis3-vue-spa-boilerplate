@@ -7,12 +7,10 @@
 
 import apify from './apify';
 
-export
-let api = apify;
+export let api = apify;
 
-export
-let http = {
-    install(Vue){
-        Vue.prototype.$http = api;
-    }
+export let http = {
+  install(Vue) {
+    Vue.prototype.$http = api;
+  }
 };

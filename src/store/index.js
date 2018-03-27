@@ -9,7 +9,7 @@ import Vue from 'vue';
 import Vuex from 'vuex';
 
 /*<dev>*/
-import helloWorld from '/view/helloWorld/store';
+import helloWorld from 'view/helloWorld/store';
 /*</dev>*/
 
 Vue.use(Vuex);

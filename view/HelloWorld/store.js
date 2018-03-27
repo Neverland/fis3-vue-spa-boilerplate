@@ -6,6 +6,7 @@
  */
 
 import {api} from 'api';
+import {HELLO_WORLD_GET_LIST} from 'mutationType';
 
 export default {
     state: {
@@ -13,7 +14,7 @@ export default {
         list: []
     },
     mutations: {
-        ['LIST'](state, data) {
+        ['HELLO_WORLD_GET_LIST'](state, data) {
             state.list = data;
         }
     },
@@ -21,7 +22,7 @@ export default {
         async list({commit}) {
             let {data = {}} = await api.getList();
 
-            commit('LIST', data);
+            commit('HELLO_WORLD_GET_LIST', data);
         }
     }
 };

@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section class="not-found">
         <h1>404</h1>The page wasn't found!
     </section>
 </template>
@@ -24,10 +24,7 @@
 
     'use strict';
 
-    import {title} from 'mixin';
-
     export default {
-        mixins: [title],
         data() {
             return {
                 pageTitle: '404 not found!',
@@ -44,5 +41,7 @@
 </script>
 
 <style lang="less" scoped rel="stylesheet/less">
+.not-found {
 
+}
 </style>

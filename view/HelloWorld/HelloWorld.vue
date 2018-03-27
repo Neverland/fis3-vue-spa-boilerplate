@@ -1,11 +1,11 @@
 <template>
-    <div>
+    <div class="hello-world">
         <div v-for="(val, key) in list"
              :key="key"
              @click="listItem(key)">
-            <mt-cell>{{ val }}</mt-cell>
+            <p>{{ val }}</p>
         </div>
-        <mt-button @click="removeCell">删除列表项</mt-button>
+        <el-button @click="removeCell">删除列表项</el-button>
     </div>
 </template>
 
@@ -26,13 +26,9 @@
 
     import {mapState} from 'vuex';
 
-    import { Toast } from 'mint-ui';
-
-    import {title} from 'mixin';
-    import store from 'src/page/HelloWorld/store';
+    import store from 'store';
 
     export default {
-        mixins: [title],
         store,
         computed: {
             ...mapState({
@@ -41,10 +37,9 @@
         },
         methods: {
             listItem(index) {
-                Toast({
+                this.$message({
                     message: `This is ${this.list[index]}`,
-                        position: 'center',
-                        duration: 1000
+                    type: 'success'
                 });
             },
             removeCell() {
@@ -60,6 +55,7 @@
 </script>
 
 <style lang="less" scoped rel="stylesheet/less">
+.hello-world {
 
-
+}
 </style>

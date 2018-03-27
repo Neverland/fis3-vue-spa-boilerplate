@@ -1,5 +1,5 @@
 {
-  "name": "we-chat",
+  "name": "baichuan",
   "version": "1.0.0",
   "description": "Fpd all in weChat!",
   "main": "index.js",
@@ -14,23 +14,23 @@
   ],
   "license": "ISC",
   "dependencies": {
-    "i-apify": "^0.4.1",
-    "mint-ui": "^2.2.13",
+    "element-ui": "^2.2.2",
+    "i-apify": "^0.4.10",
     "process": "^0.11.10",
-    "query-string": "^5.0.1",
+    "query-string": "^5.1.1",
     "underscore": "^1.8.3",
-    "vue": "^2.3.3",
+    "vue": "^2.5.16",
     "vue-router": "^2.8.1",
     "vuex": "^2.5.0"
   },
   "devDependencies": {
-    "babel-plugin-component": "^1.1.0",
-    "babel-preset-es2015": "^6.24.1",
+    "babel-plugin-add-module-exports": "^0.2.1",
     "babel-plugin-array-includes": "^2.0.3",
     "babel-plugin-async-to-promises": "^1.0.5",
+    "babel-plugin-component": "^1.1.0",
     "babel-plugin-transform-object-assign": "^6.22.0",
-    "babel-plugin-add-module-exports": "^0.2.1",
     "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
     "babel-runtime": "^6.25.0"
   }
 }

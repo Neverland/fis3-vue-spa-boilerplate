@@ -8,6 +8,6 @@
 export default {
     /*<dev>*/
     getUser: '/api/getUser',
-    getList: '/api/getList',
+    getList: '/api/getList'
     /*</dev>*/
 };

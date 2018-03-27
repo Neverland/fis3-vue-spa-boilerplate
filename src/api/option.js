@@ -13,6 +13,7 @@ export default {
     },
     handler: {
         success(response, option) {
+            let {data = {}} = response;
 
             if (response.success) {
                 return data;

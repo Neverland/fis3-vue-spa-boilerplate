@@ -8,8 +8,15 @@
 
 import Vue from 'vue';
 
-import Mint from 'mint-ui';
-import 'mint-ui/lib/style.css';
-import 'mint-ui/src/style/var.css';
+import Element from 'element-ui';
 
-Vue.use(Mint);
+import '/static/theme/default.css';
+
+Vue.use(Element);
+
+// import Mint from 'mint-ui';
+//
+// import 'mint-ui/lib/style.css';
+// import 'mint-ui/src/style/var.css';
+//
+// Vue.use(Mint);
