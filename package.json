@@ -1,7 +1,7 @@
 {
-  "name": "baichuan",
+  "name": "fis3 vue spa boilerplate",
   "version": "1.0.0",
-  "description": "Fpd all in weChat!",
+  "description": "vue + vuex + vue-router + fis3 selution",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,7 +12,7 @@
       "email": "enix@foxmail.com"
     }
   ],
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "element-ui": "^2.2.2",
     "i-apify": "^0.4.10",
