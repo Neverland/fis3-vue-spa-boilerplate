@@ -1,6 +1,6 @@
 # Vue spa
 
-> 可以同时五分支持fis3和webpack两种构建工具
+> 可以同时无缝支持fis3和webpack两种构建工具
 
 ## Usage
 
