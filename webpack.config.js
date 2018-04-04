@@ -42,6 +42,7 @@ module.exports = {
             'vue': 'vue/dist/vue.js',
             'mutationType': resolve('src/store/mutationType'),
             'api': resolve('src/api'),
+            'component': resolve('src/component'),
             '/view': resolve('view'),
             '/static': resolve('static')
         }
@@ -89,7 +90,7 @@ module.exports = {
                 })
             },
             {
-                test: /\.(png|jpg|gif)$/,
+                test: /\.(png|jpg|gif|jpeg)$/,
                 use: [
                     {
                         loader: 'file-loader',
