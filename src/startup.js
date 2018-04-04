@@ -15,6 +15,8 @@ import routerMap from './router';
 import {http} from './api';
 import App from '/view/App';
 
+import store from './store';
+
 Vue.use(VueRouter);
 Vue.use(http);
 
@@ -28,5 +30,6 @@ let router = new VueRouter({
 
 new Vue({
     render: h => h(App),
-    router
+    router,
+    store
 }).$mount('#app');
