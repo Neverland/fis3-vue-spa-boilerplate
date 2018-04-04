@@ -7,7 +7,7 @@
 
 /* global fis */
 fis
-    .match('{*.{md, sh, idea, DS_Store}, BCLOUD, fis-conf.js, .git/**, node_modules/**.json}', {
+    .match('{*.{md, sh, idea, DS_Store}, fis-conf.js, .git/**, node_modules/**.json}', {
         release: false
     });
 fis
